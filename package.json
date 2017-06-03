@@ -1,0 +1,10 @@
+{
+  "name": "chatrooms",
+  "version": "0.0.1",
+  "description": "Multiroom chat server",
+  "dependencies": {
+    "mime": "~1.2.7",
+    "semantic-ui": "^2.2.10",
+    "socket.io": "~0.9.6"
+  }
+}

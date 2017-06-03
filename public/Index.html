@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang='es'>
+<head>
+<title>Chat</title>
+	<link rel='stylesheet' href='css/style.css'></link>
+	<!-- Semantic UI CSS -->	
+	<link rel='stylesheet' type='text/css' href='semantic/dist/semantic.min.css'>
+	
+</head>
+<body>
+	<div id='content' class='aligned center masthead segment ui vertical'>
+		<div id='room' class='header ui'></div>
+		<div id='room-list' class='ui floated menu right vertical'></div>
+		<div id='messages' class='ui tertiary segment'></div>
+		
+		<form id='send-form' class='form ui'>
+			<input id='send-message' class='input ui' type='text' />
+			<input id='send-button' class='button secondary ui' type='submit' value='Send'/>
+			<div id='help' class='container primary text ui'>
+				Chat commands:
+				<ul>
+				<li>Change nickname: <code>/nick [username]</code></li>
+				<li>Join/create room: <code>/join [room name]</code></li>
+				</ul>
+			</div>
+		</form>
+	</div>
+
+<script src='/socket.io/socket.io.js' type='text/javascript'></script>
+<script src='http://code.jquery.com/jquery-1.8.0.min.js'type='text/javascript'></script>
+<script src='js/chat.js' type='text/javascript'></script>
+<script src='js/chat_ui.js' type='text/javascript'></script>
+<!----><script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+<script src="semantic/dist/semantic.min.js"></script>
+</body>
+</html>
