@@ -31,7 +31,7 @@ $(document).ready(function() {
 		var message;
 		
 		if (result.success) {
-			message = 'You are now known as ' + result.name + '.';
+			message = 'Ahora su nombre es: ' + result.name + '.';
 		} else {
 			message = result.message;
 		}
@@ -40,7 +40,7 @@ $(document).ready(function() {
 	
 	socket.on('joinResult', function(result) {
 		$('#room').text(result.room);
-		$('#messages').append(divSystemContentElement('Room changed.'));
+		$('#messages').append(divSystemContentElement('Sala de Chat cambiado.'));
 	});
 	
 	socket.on('message', function (message) {

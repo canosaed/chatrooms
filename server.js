@@ -50,8 +50,8 @@ var server = http.createServer(function(request, response) {
 	serveStatic(response, cache, absPath);
 });
 
-server.listen(8080, function() {
-	console.log("Server listening on port 8080.");
+server.listen(9000, function() {
+	console.log("Server listening on port 9000.");
 });
 
 var chatServer = require('./lib/chat_server');
